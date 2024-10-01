@@ -1,11 +1,11 @@
 import mongoose, { Document, Schema } from "mongoose";
 
 export interface IUser {
-  name: string;
-  active: boolean;
-  timeClasses: number;
-  contact: string;
-  externalData: any;
+  nome: string,
+  ativo: boolean,
+  tempoDeAulaMinutos: bigint,
+  contato: string,
+  dadoExternoNaoTratado: bigint,
 }
 
 export interface UserDocument extends Document {
